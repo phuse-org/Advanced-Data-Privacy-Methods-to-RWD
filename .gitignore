@@ -1,0 +1,28 @@
+# Data and outputs (never commit sensitive data)
+data/
+results/
+outputs/
+experiments/
+*.parquet
+*.csv
+*.tsv
+*.jsonl
+*.pkl
+*.pt
+*.ckpt
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+*.pyc
+
+# R
+.Rhistory
+.Rproj.user/
+renv/library/
+
+# OS
+.DS_Store
+Thumbs.db

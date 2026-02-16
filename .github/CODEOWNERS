@@ -1,0 +1,11 @@
+# CODEOWNERS (optional)
+# Replace placeholders with your GitHub teams or usernames.
+
+/privacy_methods/d1_structured_data/differential_privacy/ @phuse-ws2/D1-differential-privacy
+/privacy_methods/d1_structured_data/federated_learning/ @phuse-ws2/D1-federated-learning
+/privacy_methods/d1_structured_data/synthetic_data/ @phuse-ws2/D1-synthetic-data
+/privacy_methods/d1_structured_data/baseline_deidentification/ @phuse-ws2/D1-baseline-deidentification
+
+/privacy_methods/d2_unstructured_data/deidentification/ @phuse-ws2/D2-deidentification
+/privacy_methods/d2_unstructured_data/llm_privacy_controls/ @phuse-ws2/D2-llm-privacy-controls
+/privacy_methods/d2_unstructured_data/privacy_attacks/ @phuse-ws2/D2-privacy-attacks

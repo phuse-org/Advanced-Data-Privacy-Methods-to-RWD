@@ -1,0 +1,149 @@
+# Dataset registry (metadata only)
+# See README.md for full details, links, and access instructions.
+# Add dataset cards under datasets/<folder>/dataset_card.md
+
+clinical_ehr:
+  - name: MIMIC-IV
+    folder: 01_mimic-iv_icu_ehr
+    access: Controlled
+    notes: "ICU/EHR dataset; ~300k+ patients; credentialed access via PhysioNet."
+  - name: MIMIC-IV-Note
+    folder: 02_mimic-iv-note_clinical_notes
+    access: Controlled
+    notes: "Clinical notes from MIMIC-IV; millions of documents."
+  - name: eICU-CRD
+    folder: 03_eicu-crd_multi-center_icu
+    access: Controlled
+    notes: "Multi-center ICU; ~200k admissions across >200 U.S. hospitals."
+  - name: AmsterdamUMCdb
+    folder: 04_amsterdamumcdb_icu
+    access: Controlled
+    notes: "EU ICU cohort; complements MIMIC/eICU for external validation."
+  - name: HiRID
+    folder: 05_hirid_icu_timeseries
+    access: Controlled
+    notes: "High-resolution ICU time series; Bern University Hospital."
+  - name: EHRShot
+    folder: 26_ehrshot_benchmark
+    access: Open
+    notes: "Few-shot EHR benchmark; ~6,700 patients."
+
+clinical_text:
+  - name: i2b2/n2c2
+    folder: 25_i2b2_n2c2_clinical_nlp
+    access: Controlled
+    notes: "Clinical NLP shared tasks; de-identified notes with annotations."
+
+imaging:
+  - name: MIMIC-CXR
+    folder: 06_mimic-cxr_radiology_reports
+    access: Controlled
+    notes: "Chest X-rays + radiology reports from BIDMC."
+  - name: NCI IDC
+    folder: 09_nci-idc_oncology_imaging
+    access: Open
+    notes: "NCI Imaging Data Commons; >80 TB oncology imaging."
+  - name: TCIA
+    folder: 10_tcia_cancer_imaging
+    access: Open
+    notes: "The Cancer Imaging Archive; hundreds of curated collections."
+  - name: BIMCV COVID-19+
+    folder: 11_bimcv_covid19_imaging
+    access: Open
+    notes: "COVID-19 CXR/CT imaging from Valencia, Spain."
+  - name: NIH ChestX-ray14
+    folder: 12_nih_chestxray14
+    access: Open
+    notes: "100k+ frontal CXRs with 14 disease labels."
+  - name: CheXpert
+    folder: 13_chexpert_chest_xray
+    access: Controlled
+    notes: "224k CXRs from Stanford with uncertainty labels; research use agreement required."
+  - name: COVIDx-US
+    folder: 14_covidx-us_ultrasound
+    access: Open
+    notes: "Lung ultrasound; 12k+ images, COVID vs non-COVID."
+  - name: LC25000
+    folder: 15_lc25000_histopathology
+    access: Open
+    notes: "25k histopathology images; 5 classes (lung/colon)."
+  - name: OpenNeuro
+    folder: 16_openneuro_brain_imaging
+    access: Open
+    notes: "BIDS-standardized neuro datasets (MRI, fMRI, EEG, MEG)."
+
+signals_wearables:
+  - name: PhysioNet ICU Waveforms
+    folder: 07_physionet_icu_waveforms
+    access: Controlled
+    notes: "ICU physiologic waveforms (ECG, ABP, PPG)."
+  - name: PhysioNet Challenge
+    folder: 32_physionet_challenge_signals
+    access: Open
+    notes: "Annual challenge datasets (ECG, PPG, accelerometer)."
+  - name: Open mHealth
+    folder: 33_openmhealth_wearables
+    access: Controlled
+    notes: "Digital phenotyping (Beiwe, mPower); smartphone + wearable sensors."
+
+registry_claims:
+  - name: SEER
+    folder: 08_seer_cancer_registry
+    access: Controlled
+    notes: "U.S. population-based cancer registry; millions of cases since 1975."
+  - name: HCUP NIS
+    folder: 28_hcup-nis_inpatient_claims
+    access: Restricted
+    notes: "National Inpatient Sample; ~7M discharges/year; fee-based."
+  - name: OpenFDA
+    folder: 29_openfda_regulatory
+    access: Open
+    notes: "FDA adverse events, recalls, product labels via API."
+
+public_health_sdoh:
+  - name: NHANES
+    folder: 17_nhanes_health_survey
+    access: Open
+    notes: "U.S. national health/nutrition survey; ongoing since 1960s."
+  - name: NHIS
+    folder: 18_nhis_health_interview
+    access: Open
+    notes: "Annual U.S. health interview survey."
+  - name: BRFSS
+    folder: 19_brfss_behavioral_risk
+    access: Open
+    notes: "Largest U.S. health survey; behavioral risk factors."
+  - name: WHO GHO
+    folder: 20_who-gho_global_health
+    access: Open
+    notes: "Global health indicators; 194 countries."
+  - name: CDC/ATSDR SVI
+    folder: 21_cdc-svi_social_vulnerability
+    access: Open
+    notes: "Social vulnerability index; U.S. census tract level."
+  - name: EPA AQS
+    folder: 22_epa-aqs_air_quality
+    access: Open
+    notes: "U.S. ambient air quality monitoring network."
+  - name: County Health Rankings
+    folder: 23_countyhealthrankings_sdoh
+    access: Open
+    notes: "County-level health measures; fairness/inequity analyses."
+  - name: ADI
+    folder: 24_adi_area_deprivation
+    access: Open
+    notes: "Area Deprivation Index; 17 census-based indicators."
+  - name: SatHealth
+    folder: 27_sathealth_environment_sdoh
+    access: Open
+    notes: "Satellite + environment + SDoH features; geospatial ML."
+
+multimodal_genomic:
+  - name: UK Biobank
+    folder: 30_uk_biobank_multimodal
+    access: Restricted
+    notes: "~500k UK participants; EHR + imaging + genomics; fee + application."
+  - name: All of Us
+    folder: 31_allofus_nih_multimodal
+    access: Controlled
+    notes: "NIH program; >500k U.S. participants; EHR + surveys + genomics + wearables."
