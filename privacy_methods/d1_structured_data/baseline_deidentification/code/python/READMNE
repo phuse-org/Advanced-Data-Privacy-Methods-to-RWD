@@ -510,3 +510,4 @@ The KM survival curve is **essentially unchanged** after patient-level date shif
 - Code: all Python scripts in `privacy_methods/d1_structured_data/baseline_deidentification/python/`
 - Results: all CSV and PNG files in `results/baseline_deidentification/`
 - This handoff document: `BASELINE_DEIDENTIFICATION_TEAM_HANDOFF.md`
+
