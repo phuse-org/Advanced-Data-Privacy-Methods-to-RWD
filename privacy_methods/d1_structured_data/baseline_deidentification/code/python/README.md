@@ -1,4 +1,4 @@
-# PHUSE D1 Structured Data — Baseline De-identification: Review & Team Handoff
+# PHUSE D1 Structured Data — Baseline De-identification: Review 
 
 **Date**: 2026-03-13
 **Status**: Baseline prototype — ready to present as a skeleton to proceed
@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-This is a **reproducible baseline de-identification benchmark on Synthea synthetic patient data**. It demonstrates the full end-to-end workflow — ingest, profile, build analytic mart, de-identify, evaluate privacy, and evaluate utility — and surfaces an important finding:
+This is a **reproducible baseline de-identification benchmark on Synthea synthetic patient data**. 
 
 > **Removing direct identifiers is not enough.** Even after standard generalization, the combination of demographics + bucketed utilization counts + year-level encounter dates is enough to uniquely identify **99.3% of patients** in the public release file.
 
@@ -510,4 +510,5 @@ The KM survival curve is **essentially unchanged** after patient-level date shif
 - Code: all Python scripts in `privacy_methods/d1_structured_data/baseline_deidentification/python/`
 - Results: all CSV and PNG files in `results/baseline_deidentification/`
 - This handoff document: `BASELINE_DEIDENTIFICATION_TEAM_HANDOFF.md`
+
 
